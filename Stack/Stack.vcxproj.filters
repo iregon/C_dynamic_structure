@@ -18,5 +18,13 @@
     <ClCompile Include="main.c">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="stack.c">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stack.h">
+      <Filter>File di origine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
