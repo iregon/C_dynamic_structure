@@ -19,7 +19,7 @@ Stack* make_stack(int size) {
 	s->length = 0;
 	s->elem = (void**)malloc(s->size * sizeof(void*));
 
-	return &s;
+	return s;
 }
 
 int push(Stack* s, void* elem) {
@@ -44,7 +44,7 @@ _Bool is_empty(Stack* s) {
 
 int main() {
 	Stack* s = make_stack(10);
-
+	if (s == NULL) return 1;
 	int l = s->length;
 	int si = s->size;
 
