@@ -9,12 +9,12 @@ typedef struct stack_struct Stack;
 
 Stack* make_stack(int size);
 
-int push(Stack* s, void* elem);
+int push_in_stack(Stack* s, void* elem);
 
-void* pop(Stack* s);
+void* pop_from_stack(Stack* s);
 
-int length(Stack* s);
+int get_stack_length(Stack* s);
 
-_Bool is_empty(Stack* s);
+_Bool is_stack_empty(Stack* s);
 
-int change_size(Stack* s, int size);
+int change_stack_size(Stack* s, int size);
