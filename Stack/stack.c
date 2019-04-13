@@ -32,3 +32,11 @@ int length(Stack * s) {
 _Bool is_empty(Stack * s) {
 	return s->length == 0;
 }
+
+int change_size(Stack* s, int size) {
+	if (size <= 0) return 1;
+	s->elem = (void**)malloc(size * sizeof(void*));
+	if (s->elem == NULL) return 1;
+	s->size = size;
+	return 0;
+}

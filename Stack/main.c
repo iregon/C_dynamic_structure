@@ -18,6 +18,13 @@ int main() {
 		printf("Empty\n");
 	}
 
+	int res = change_size(s, 20);
+	if (res != 1) {
+		l = s->length;
+		si = s->size;
+		printf("Size: %d, length: %d, %d\n", si, l, sizeof(s->elem));
+	}
+
 	system("PAUSE");
 	return 0;
 }

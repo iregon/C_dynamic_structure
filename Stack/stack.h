@@ -16,3 +16,5 @@ void* pop(Stack* s);
 int length(Stack* s);
 
 _Bool is_empty(Stack* s);
+
+int change_size(Stack* s, int size);
