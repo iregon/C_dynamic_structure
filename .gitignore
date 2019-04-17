@@ -333,3 +333,9 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 /Doxyfile
+/Doc/Doxyfile
+/Stack/resource.h
+/Stack/Stack.rc
+/Stack/Stack.vcxproj
+/Stack/Stack.vcxproj.filters
+/Stack.sln
