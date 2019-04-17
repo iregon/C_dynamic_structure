@@ -1,3 +1,10 @@
+/**
+ * @file main.c
+ * @author Alessandro Tornesello
+ * @date 13 aprile 2019
+ * @brief Stack management library.
+ */
+
 #include <stdio.h>
 #include "stack.h"
 
