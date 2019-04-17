@@ -1,5 +1,4 @@
 language: c
-solution: "./Stack.sln"
 sudo: false # only for faster builds
 script:
   - clang -coverage -O0 Stack/main.c -o main
