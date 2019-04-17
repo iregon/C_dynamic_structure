@@ -1,5 +1,4 @@
 language: c
-install: make get-deps
 compiler: gcc
 script:
  - gcc ./Stack/main.c -o main
