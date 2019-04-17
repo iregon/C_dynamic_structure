@@ -84,12 +84,16 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9e5e28454f92fc3f3667cd31dfa4b910"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linked__node__stack_8c.html#a9e5e28454f92fc3f3667cd31dfa4b910">push</a> (<a class="el" href="linked__node__stack_8h.html#a812b487d05cd9e638b091ce05f4bb937">linked_node_stack</a> *s, void *elem)</td></tr>
+<tr class="memdesc:a9e5e28454f92fc3f3667cd31dfa4b910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a new element in a stack.  <a href="#a9e5e28454f92fc3f3667cd31dfa4b910">More...</a><br /></td></tr>
 <tr class="separator:a9e5e28454f92fc3f3667cd31dfa4b910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18d5b4affdf616bdc89fc3d1a0bb697"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linked__node__stack_8c.html#aa18d5b4affdf616bdc89fc3d1a0bb697">pop</a> (<a class="el" href="linked__node__stack_8h.html#a812b487d05cd9e638b091ce05f4bb937">linked_node_stack</a> *s)</td></tr>
+<tr class="memdesc:aa18d5b4affdf616bdc89fc3d1a0bb697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop an element from the stack.  <a href="#aa18d5b4affdf616bdc89fc3d1a0bb697">More...</a><br /></td></tr>
 <tr class="separator:aa18d5b4affdf616bdc89fc3d1a0bb697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1c5f870923acc7bcd8f5c6bf233300d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="linked__node__stack_8h.html#a812b487d05cd9e638b091ce05f4bb937">linked_node_stack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linked__node__stack_8c.html#aa1c5f870923acc7bcd8f5c6bf233300d">init</a> ()</td></tr>
+<tr class="memdesc:aa1c5f870923acc7bcd8f5c6bf233300d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new stack.  <a href="#aa1c5f870923acc7bcd8f5c6bf233300d">More...</a><br /></td></tr>
 <tr class="separator:aa1c5f870923acc7bcd8f5c6bf233300d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82e9e09f39fd76631f228af2d4014e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linked__node__stack_8c.html#a82e9e09f39fd76631f228af2d4014e0e">destroy</a> (<a class="el" href="linked__node__stack_8h.html#a812b487d05cd9e638b091ce05f4bb937">linked_node_stack</a> *s)</td></tr>
+<tr class="memdesc:a82e9e09f39fd76631f228af2d4014e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a stack.  <a href="#a82e9e09f39fd76631f228af2d4014e0e">More...</a><br /></td></tr>
 <tr class="separator:a82e9e09f39fd76631f228af2d4014e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -115,6 +119,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Destroy a stack. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to stack to destroy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="linked__node__stack_8c_source.html#l00023">23</a> of file <a class="el" href="linked__node__stack_8c_source.html">linked_node_stack.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                   {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div></div><!-- fragment -->
 </div>
@@ -133,6 +145,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize a new stack. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the new stack. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linked__node__stack_8c_source.html#l00019">19</a> of file <a class="el" href="linked__node__stack_8c_source.html">linked_node_stack.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                          {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div></div><!-- fragment -->
@@ -153,6 +168,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Pop an element from the stack. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to stack from which to take the element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the taked element. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linked__node__stack_8c_source.html#l00015">15</a> of file <a class="el" href="linked__node__stack_8c_source.html">linked_node_stack.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div></div><!-- fragment -->
@@ -183,6 +207,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Push a new element in a stack. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to stack in which to insert the element. </td></tr>
+    <tr><td class="paramname">elem</td><td>Pointer to element to insert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Execution status:<br />
+<b>0</b>: done without errors.<br />
+<b>1</b>: error. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="linked__node__stack_8c_source.html#l00011">11</a> of file <a class="el" href="linked__node__stack_8c_source.html">linked_node_stack.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                           {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div></div><!-- fragment -->

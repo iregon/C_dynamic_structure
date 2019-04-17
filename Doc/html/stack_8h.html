@@ -167,12 +167,12 @@ Functions</h2></td></tr>
 <p>Change the maximum number insertable in the stack. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Stack to modify. </td></tr>
+    <tr><td class="paramname">s</td><td>Pointer to stack to modify. </td></tr>
     <tr><td class="paramname">size</td><td>Maximum elements in the stack. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer of the new stack. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the new stack. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="stack_8c_source.html#l00043">43</a> of file <a class="el" href="stack_8c_source.html">stack.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                          {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (size &lt;= 0) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    s-&gt;<a class="code" href="structstack__struct.html#ad17e582018e6f064ac37424cbe75bc20">elem</a> = (<span class="keywordtype">void</span>**)malloc(size * <span class="keyword">sizeof</span>(<span class="keywordtype">void</span>*));</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (s-&gt;<a class="code" href="structstack__struct.html#ad17e582018e6f064ac37424cbe75bc20">elem</a> == NULL) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    s-&gt;<a class="code" href="structstack__struct.html#a439227feff9d7f55384e8780cfc2eb82">size</a> = size;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="ttc" id="structstack__struct_html_a439227feff9d7f55384e8780cfc2eb82"><div class="ttname"><a href="structstack__struct.html#a439227feff9d7f55384e8780cfc2eb82">stack_struct::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> <a href="stack_8h_source.html#l00013">stack.h:13</a></div></div>
@@ -199,7 +199,7 @@ Functions</h2></td></tr>
 <p>Make a new stack. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Maximum elements in the stack. </td></tr>
+    <tr><td class="paramname">s</td><td>Pointer to the stack. </td></tr>
   </table>
   </dd>
 </dl>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
 <p>Check if stack is empty. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Stack to check. </td></tr>
+    <tr><td class="paramname">s</td><td>Pointer to stack to check. </td></tr>
   </table>
   </dd>
 </dl>
@@ -292,7 +292,7 @@ Functions</h2></td></tr>
 <p>Pop an element from the stack. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Stack from which to take the element. </td></tr>
+    <tr><td class="paramname">s</td><td>Pointer to stack from which to take the element. </td></tr>
   </table>
   </dd>
 </dl>
@@ -333,8 +333,8 @@ Functions</h2></td></tr>
 <p>Push a new element in a stack. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Stack in which to insert the element. </td></tr>
-    <tr><td class="paramname">elem</td><td>Element to insert. </td></tr>
+    <tr><td class="paramname">s</td><td>Pointer to stack in which to insert the element. </td></tr>
+    <tr><td class="paramname">elem</td><td>Pointer to element to insert. </td></tr>
   </table>
   </dd>
 </dl>

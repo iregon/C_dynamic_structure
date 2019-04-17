@@ -24,37 +24,37 @@ stack* make_stack(int size);
 
 /**
  * @brief Push a new element in a stack.
- * @param s Stack in which to insert the element.
- * @param elem Element to insert.
+ * @param s Pointer to stack in which to insert the element.
+ * @param elem Pointer to element to insert.
  * @return Execution status:<br><b>0</b>: done without errors.<br><b>1</b>: error.
  */
 int push_in_stack(stack* s, void* elem);
 
 /**
  * @brief Pop an element from the stack.
- * @param s Stack from which to take the element.
+ * @param s Pointer to stack from which to take the element.
  * @return Pointer to the taked element.
  */
 void* pop_from_stack(stack* s);
 
 /**
  * @brief Make a new stack.
- * @param s Maximum elements in the stack.
+ * @param s Pointer to the stack.
  * @return Maximum elements insertable in the stack.
  */
 int get_stack_length(stack* s);
 
 /**
  * @brief Check if stack is empty.
- * @param s Stack to check.
+ * @param s Pointer to stack to check.
  * @return <b>True</b> if stack is empty, otherwise <b>False</b>.
  */
 _Bool is_stack_empty(stack* s);
 
 /**
  * @brief Change the maximum number insertable in the stack.
- * @param s Stack to modify.
+ * @param s Pointer to stack to modify.
  * @param size Maximum elements in the stack.
- * @return Pointer of the new stack.
+ * @return Pointer to the new stack.
  */
 int change_stack_size(stack* s, int size);
