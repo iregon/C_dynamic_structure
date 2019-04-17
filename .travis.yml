@@ -1,6 +1,7 @@
 language: c
 solution: "./Stack.sln"
-install:
-- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./Stack.sln
+sudo: false # only for faster builds
 script:
-- xbuild ./Stack.sln
+  - clang -coverage -O0 Stack/main.c -o main
+  - ./Stack/main
+  - gcov Stack/main.c
