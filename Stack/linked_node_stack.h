@@ -9,16 +9,16 @@
   * @brief Struct with the information of the single node
   */
 typedef struct linked_node_struct {
-	void* elem;
-	struct node* next;
+	void* elem;			/**< Pointer to element. */
+	struct node* next;	/**< Pointer to next node. */
 } linked_node;
 
 /**
  * @brief Struct with the information of the stack
  */
 typedef struct linked_node_stack_struct {
-	struct node* head;
-	int lenght;
+	struct node* head;	/**< Pointer to first element. */
+	int lenght;			/**< Total size of the stack. */
 } linked_node_stack;
 
 /**
