@@ -1,3 +1,10 @@
+/**
+ * @file linked_node_stack.c
+ * @author Alessandro Tornesello
+ * @date 13 aprile 2019
+ * @brief Linked node stack management library.
+ */
+
 #include <stdlib.h>
 #include "linked_node_stack.h"
 

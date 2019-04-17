@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>C Dynamic structure: stack_struct Struct Reference</title>
+<title>C Dynamic structure: linked_node_struct Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,82 +66,57 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">stack_struct Struct Reference</div>  </div>
+<div class="title">linked_node_struct Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Struct with the information of the stack.  
- <a href="structstack__struct.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="stack_8h_source.html">stack.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a439227feff9d7f55384e8780cfc2eb82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstack__struct.html#a439227feff9d7f55384e8780cfc2eb82">size</a></td></tr>
-<tr class="separator:a439227feff9d7f55384e8780cfc2eb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad17e582018e6f064ac37424cbe75bc20"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstack__struct.html#ad17e582018e6f064ac37424cbe75bc20">elem</a></td></tr>
-<tr class="separator:ad17e582018e6f064ac37424cbe75bc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f59b34b1f25fe00023291b678246bcc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstack__struct.html#a9f59b34b1f25fe00023291b678246bcc">length</a></td></tr>
-<tr class="separator:a9f59b34b1f25fe00023291b678246bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0b31748cf47160d9bfb0759ec301a2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlinked__node__struct.html#a0f0b31748cf47160d9bfb0759ec301a2">elem</a></td></tr>
+<tr class="separator:a0f0b31748cf47160d9bfb0759ec301a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc1b6470487aa86d9936e3cab8b95be"><td class="memItemLeft" align="right" valign="top">struct node *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlinked__node__struct.html#a0dc1b6470487aa86d9936e3cab8b95be">next</a></td></tr>
+<tr class="separator:a0dc1b6470487aa86d9936e3cab8b95be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Struct with the information of the stack. </p>
-
-<p class="definition">Definition at line <a class="el" href="stack_8h_source.html#l00011">11</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="linked__node__stack_8h_source.html#l00008">8</a> of file <a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ad17e582018e6f064ac37424cbe75bc20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad17e582018e6f064ac37424cbe75bc20">&#9670;&nbsp;</a></span>elem</h2>
+<a id="a0f0b31748cf47160d9bfb0759ec301a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0b31748cf47160d9bfb0759ec301a2">&#9670;&nbsp;</a></span>elem</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void** elem</td>
+          <td class="memname">void* elem</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Array of elements in the stack. </p>
 
-<p class="definition">Definition at line <a class="el" href="stack_8h_source.html#l00014">14</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linked__node__stack_8h_source.html#l00009">9</a> of file <a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a>.</p>
 
 </div>
 </div>
-<a id="a9f59b34b1f25fe00023291b678246bcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f59b34b1f25fe00023291b678246bcc">&#9670;&nbsp;</a></span>length</h2>
+<a id="a0dc1b6470487aa86d9936e3cab8b95be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc1b6470487aa86d9936e3cab8b95be">&#9670;&nbsp;</a></span>next</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int length</td>
+          <td class="memname">struct node* next</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Counter of the elements in the stack. </p>
 
-<p class="definition">Definition at line <a class="el" href="stack_8h_source.html#l00015">15</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
-
-</div>
-</div>
-<a id="a439227feff9d7f55384e8780cfc2eb82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a439227feff9d7f55384e8780cfc2eb82">&#9670;&nbsp;</a></span>size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int size</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Total size of the stack. </p>
-
-<p class="definition">Definition at line <a class="el" href="stack_8h_source.html#l00013">13</a> of file <a class="el" href="stack_8h_source.html">stack.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="linked__node__stack_8h_source.html#l00010">10</a> of file <a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/Alessandro/Documents/Visual Studio 2019/Projects/C_dynamic_structure/Stack/<a class="el" href="stack_8h_source.html">stack.h</a></li>
+<li>C:/Users/Alessandro/Documents/Visual Studio 2019/Projects/C_dynamic_structure/Stack/<a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

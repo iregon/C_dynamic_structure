@@ -1,3 +1,10 @@
+/**
+ * @file linked_node_stack.h
+ * @author Alessandro Tornesello
+ * @date 13 aprile 2019
+ * @brief Linked node stack management library.
+ */
+
 typedef struct linked_node_struct {
 	void* elem;
 	struct node* next;

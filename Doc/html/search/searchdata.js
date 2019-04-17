@@ -1,11 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "cegilmps",
-  1: "s",
-  2: "s",
-  3: "cgimp",
-  4: "els",
-  5: "s"
+  0: "cdeghilmnps",
+  1: "ls",
+  2: "ls",
+  3: "cdgimp",
+  4: "ehlns",
+  5: "ls"
 };
 
 var indexSectionNames =
@@ -21,7 +21,7 @@ var indexSectionNames =
 var indexSectionLabels =
 {
   0: "All",
-  1: "Classes",
+  1: "Data Structures",
   2: "Files",
   3: "Functions",
   4: "Variables",
