@@ -9,7 +9,7 @@
 #include "stack.h"
 
 int main() {
-	Stack* s = make_stack(10);
+	stack* s = make_stack(10);
 	if (s == NULL) return 1;
 	int l = s->length;
 	int si = s->size;

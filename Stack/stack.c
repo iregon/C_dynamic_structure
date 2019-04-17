@@ -8,8 +8,8 @@
 #include <stdlib.h>
 #include "stack.h"
 
-Stack* make_stack(int size) {
-	Stack* s = (Stack*)malloc(sizeof(Stack));
+stack* make_stack(int size) {
+	stack* s = (stack*)malloc(sizeof(stack));
 
 	if (s == NULL) return NULL;
 
@@ -20,27 +20,27 @@ Stack* make_stack(int size) {
 	return s;
 }
 
-int push_in_stack(Stack * s, void* elem) {
+int push_in_stack(stack * s, void* elem) {
 	if (s->length == s->size) return 1;
 	s->elem[s->length] = elem;
 	s->length++;
 	return 0;
 }
 
-void* pop_from_stack(Stack * s) {
+void* pop_from_stack(stack * s) {
 	if (s->length == 0) return NULL;
 	return s->elem[--s->length];
 }
 
-int get_stack_length(Stack * s) {
+int get_stack_length(stack * s) {
 	return s->length;
 }
 
-_Bool is_stack_empty(Stack * s) {
+_Bool is_stack_empty(stack * s) {
 	return s->length == 0;
 }
 
-int change_stack_size(Stack* s, int size) {
+int change_stack_size(stack* s, int size) {
 	if (size <= 0) return 1;
 	s->elem = (void**)malloc(size * sizeof(void*));
 	if (s->elem == NULL) return 1;
