@@ -1,6 +1,5 @@
 language: c
-sudo: false # only for faster builds
+install: make get-deps
+compiler: gcc
 script:
-  - clang -coverage -O0 Stack/main.c -o main
-  - ./main
-  - gcov Stack/main.c
+ - gcc ./Stack/main.c -o main
