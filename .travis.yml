@@ -1,4 +1,4 @@
 language: c
 compiler: gcc
 script:
- - gcc ./Stack/main.c -o main -std=c99 -l /Stack/stack.h
+ - gcc -l/Stack/stack.h ./Stack/main.c -o main -std=c99
