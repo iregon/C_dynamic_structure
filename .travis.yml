@@ -2,3 +2,10 @@ language: c
 compiler: gcc
 script:
  - gcc -Wall -I. ./Stack/main.c -L./Stack -l stack -o main -std=c99
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-5
+    - g++-5
