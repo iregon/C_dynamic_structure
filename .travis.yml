@@ -1,4 +1,5 @@
 language: c
 compiler: gcc
 script:
+ - cat /etc/ld.so.conf
  - gcc -Wall -v -iquote ./Stack ./Stack/main.c -L./Stack -l stack -o main -std=c99
