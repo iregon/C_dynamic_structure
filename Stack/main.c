@@ -26,7 +26,7 @@ int main() {
 		printf("Empty\n");
 	}
 
-	int res = change_stack_size(s, 20);
+	//int res = change_stack_size(s, 20);
 
 	for (int i = 0; i < s->size; i++)
 	{
