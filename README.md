@@ -1,5 +1,4 @@
 # Dynamic structures in C
-[![Build Status](https://travis-ci.com/iregon/C_dynamic_structure.svg?branch=master)](https://travis-ci.com/iregon/C_dynamic_structure)
 
 A collection of libraries for managing dynamic structures (stack, queue and list) in C.
 
