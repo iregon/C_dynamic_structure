@@ -16,12 +16,12 @@ Stack with linked nodes:
 
 Basic queue:
 ```c
-#include "stack.h"
+#include "queue.h"
 ```
 
 List:
 ```c
-#include "stack.h"
+#include "list.h"
 ```
 
 ## Contributing
