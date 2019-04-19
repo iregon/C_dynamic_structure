@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fstack_5flength',['get_stack_length',['../stack_8c.html#a7100c20992dec9505e9d170f4a40b0a9',1,'get_stack_length(stack *s):&#160;stack.c'],['../stack_8h.html#a7100c20992dec9505e9d170f4a40b0a9',1,'get_stack_length(stack *s):&#160;stack.c']]]
+  ['enqueue',['enqueue',['../queue_8c.html#a692123e4488fdeee833734e7c2f50242',1,'enqueue(queue_struct *q, void *newelem):&#160;queue.c'],['../queue_8h.html#a692123e4488fdeee833734e7c2f50242',1,'enqueue(queue_struct *q, void *newelem):&#160;queue.c']]]
 ];

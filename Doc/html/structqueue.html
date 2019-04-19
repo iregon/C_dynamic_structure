@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>C Dynamic structure: linked_node_struct Struct Reference</title>
+<title>C Dynamic structure: queue Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,63 +66,82 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">linked_node_struct Struct Reference</div>  </div>
+<div class="title">queue Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Struct with the information of the single node.  
- <a href="structlinked__node__struct.html#details">More...</a></p>
+<p>Struct with the information of the queue.  
+ <a href="structqueue.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="queue_8h_source.html">queue.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a0f0b31748cf47160d9bfb0759ec301a2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlinked__node__struct.html#a0f0b31748cf47160d9bfb0759ec301a2">elem</a></td></tr>
-<tr class="separator:a0f0b31748cf47160d9bfb0759ec301a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc1b6470487aa86d9936e3cab8b95be"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnode.html">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlinked__node__struct.html#a0dc1b6470487aa86d9936e3cab8b95be">next</a></td></tr>
-<tr class="separator:a0dc1b6470487aa86d9936e3cab8b95be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047dba97aeb6d1be1eb31a80f84c5583"><td class="memItemLeft" align="right" valign="top"><a class="el" href="queue_8h.html#a52a24db0e956138bb763be8262ceb4e8">node_struct</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqueue.html#a047dba97aeb6d1be1eb31a80f84c5583">head</a></td></tr>
+<tr class="separator:a047dba97aeb6d1be1eb31a80f84c5583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b6f4a681fcb5f2e455112d4c066718"><td class="memItemLeft" align="right" valign="top"><a class="el" href="queue_8h.html#a52a24db0e956138bb763be8262ceb4e8">node_struct</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqueue.html#ab2b6f4a681fcb5f2e455112d4c066718">tail</a></td></tr>
+<tr class="separator:ab2b6f4a681fcb5f2e455112d4c066718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f59b34b1f25fe00023291b678246bcc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqueue.html#a9f59b34b1f25fe00023291b678246bcc">length</a></td></tr>
+<tr class="separator:a9f59b34b1f25fe00023291b678246bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Struct with the information of the single node. </p>
+<div class="textblock"><p>Struct with the information of the queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="linked__node__stack_8h_source.html#l00011">11</a> of file <a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="queue_8h_source.html#l00011">11</a> of file <a class="el" href="queue_8h_source.html">queue.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a0f0b31748cf47160d9bfb0759ec301a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f0b31748cf47160d9bfb0759ec301a2">&#9670;&nbsp;</a></span>elem</h2>
+<a id="a047dba97aeb6d1be1eb31a80f84c5583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047dba97aeb6d1be1eb31a80f84c5583">&#9670;&nbsp;</a></span>head</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* elem</td>
+          <td class="memname"><a class="el" href="queue_8h.html#a52a24db0e956138bb763be8262ceb4e8">node_struct</a>* head</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pointer to element. </p>
+<p>Pointer to element on head. </p>
 
-<p class="definition">Definition at line <a class="el" href="linked__node__stack_8h_source.html#l00012">12</a> of file <a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="queue_8h_source.html#l00012">12</a> of file <a class="el" href="queue_8h_source.html">queue.h</a>.</p>
 
 </div>
 </div>
-<a id="a0dc1b6470487aa86d9936e3cab8b95be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dc1b6470487aa86d9936e3cab8b95be">&#9670;&nbsp;</a></span>next</h2>
+<a id="a9f59b34b1f25fe00023291b678246bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f59b34b1f25fe00023291b678246bcc">&#9670;&nbsp;</a></span>length</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structnode.html">node</a>* next</td>
+          <td class="memname">int length</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pointer to next node. </p>
+<p>Length of the queue. </p>
 
-<p class="definition">Definition at line <a class="el" href="linked__node__stack_8h_source.html#l00013">13</a> of file <a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="queue_8h_source.html#l00014">14</a> of file <a class="el" href="queue_8h_source.html">queue.h</a>.</p>
+
+</div>
+</div>
+<a id="ab2b6f4a681fcb5f2e455112d4c066718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b6f4a681fcb5f2e455112d4c066718">&#9670;&nbsp;</a></span>tail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="queue_8h.html#a52a24db0e956138bb763be8262ceb4e8">node_struct</a>* tail</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to element on tail. </p>
+
+<p class="definition">Definition at line <a class="el" href="queue_8h_source.html#l00013">13</a> of file <a class="el" href="queue_8h_source.html">queue.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/Alessandro/Documents/Visual Studio 2019/Projects/C_dynamic_structure/Stack/<a class="el" href="linked__node__stack_8h_source.html">linked_node_stack.h</a></li>
+<li>C:/Users/Alessandro/Documents/Visual Studio 2019/Projects/C_dynamic_structure/Stack/<a class="el" href="queue_8h_source.html">queue.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

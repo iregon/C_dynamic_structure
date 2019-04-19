@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stack',['stack',['../stack_8h.html#aa8a09603f96c4ac719ea409f77ed911d',1,'stack.h']]]
+  ['node_5fstruct',['node_struct',['../queue_8h.html#a52a24db0e956138bb763be8262ceb4e8',1,'queue.h']]]
 ];

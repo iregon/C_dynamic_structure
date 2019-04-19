@@ -5,9 +5,9 @@
  * @brief Linked node stack management library.
  */
 
- /**
-  * @brief Struct with the information of the single node
-  */
+/**
+ * @brief Struct with the information of the single node
+ */
 typedef struct linked_node_struct {
 	void* elem;			/**< Pointer to element. */
 	struct node* next;	/**< Pointer to next node. */
